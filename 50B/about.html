@@ -1,72 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1>Vephla University 50B- Software Engineering</h1>
     <p>What is your favourite language</p>
-    <form autocomplete="on">
-        <!-- <label for="fullname" >Fullname:</label>
-        <input type="text" name="fullname" id="fullname" placeholder="John Doe" required>
-        <br />
-        <br />
-        <label for="school">School:</label>
-        <input type="text"  name="school" id="school"
-        placeholder="Vephla University" required>
-        <br />
-        <br />
-        <label for="email"> Email</label>
-        <input type="email" name="email" id="email"
-        placeholder="johndoes@example.com" required>
-        <br />
-        <br />
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password"
-        placeholder="*******" required>
-        <br />
-        <br />
-        <button type="submit">Submit</button> -->
-        <!-- <input type="checkbox" name="food1" id="rice">
-        <label for="rice">Rice</label>
-        <br />
-        <input type="checkbox" name="food2" id="beans">
-        <label for="beans">Beans</label>
-        <br />
-        <Input type="checkbox" name="food3" id="yam">
-        <label for="yam">Yam </label> -->
-    <select size="5">
-        <option value="disabled" >-----Select your Course-----</option>
+    <form action="/submit" method="post">
+      <label for="fullname">Fullname:</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        placeholder="John Doe"
+        required
+      />
+      <br />
+      <br />
+      <label for="school">School:</label>
+      <input
+        type="text"
+        name="school"
+        id="school"
+        placeholder="Vephla University"
+        required
+      />
+      <br />
+      <br />
+      <label for="email"> Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="johndoes@example.com"
+        required
+      />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="*******"
+        required
+      />
+      <br />
+      <br />
+      <button type="submit" value="send">Submit</button>
+      <br />
+      <br />
+    
+
+      <h4>What is your gender?</h4>
+      <input type="radio" name= "gender" id="gender"/>
+      <label for="girl">Girl</label>
+
+       <input type="radio" name= "gender" id="gender"/>
+      
+      <label for="boy">Boy</label>
+
+      <input type="radio" name= "gender" id="gender"/>
+      
+      <label for="not say">Rather not say</label>
+
+       <br />
+
+      <input type="checkbox" 
+      name="food1" id="rice" />
+      <label for="rice">Rice</label>
+      <br />
+      <input type="checkbox" name="food2" id="beans" />
+      <label for="beans">Beans</label>
+      <br />
+      <input type="checkbox" name="food3" id="yam" />
+      <label for="yam">Yam</label>
+      <br />
+      <br />
+      <label for="course">Select your course:</label>
+      <select name="course" id="course" size="5">
+        <option value="" disabled selected>-----Select your Course-----</option>
         <option value="FE">FrontEnd Engineering</option>
         <option value="BE">Backend Engineering</option>
         <option value="FS">Fullstack Engineering</option>
         <option value="DA">Data Analytics</option>
         <option value="AA">AI Automation</option>
         <option value="CS">Cyber Security</option>
-        <option value="DO" selected>Dev Ops</option>
-        select>  
-        <br />
-        <br />
-        
-        <textarea rows="10" cols="40">
-        </textarea>
+        <option value="DO">Dev Ops</option>
+      </select>
+      <br />
+      <br />
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="comments" rows="10" cols="40"></textarea>
+      <br />
+      <br />
 
-        <!-- <input list="food">
-        <datalist id="food">
-            <option value="Rice">
-            <option value="Beans">
-            <option value="Yam">
-            <option value="Potatoes"></option>  
-            <option value="Plantain"></option>
-            <option value="Vegetables"></option>     
-         </datalist> -->
-
-         <input type="range" min="0" max="100">
-       
+      <label for="favorite-food">Choose a meal</label>
+      <input list="food" name="favorite-food" id="favorite-food" />
+      <datalist id="food">
+        <option value="Rice"></option>
+        <option value="Beans"></option>
+        <option value="Yam"></option>
+        <option value="Potatoes"></option>
+        <option value="Plantain"></option>
+        <option value="Vegetables"></option>
+      </datalist>
+      <br />
+      <br />
+      <label for="satisfaction">Satisfaction level</label>
+      <input
+        type="range"
+        name="satisfaction"
+        id="satisfaction"
+        min="0"
+        max="100"
+      />
     </form>
-     
-</body>
+  </body>
 </html>
